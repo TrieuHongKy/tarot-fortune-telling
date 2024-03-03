@@ -34,6 +34,8 @@ class SpreadSeeder extends Seeder
                     "warning" => $rowData['5'],
                     "advise" => $rowData['6'],
                     "meaning" => $rowData['7'],
+                    "created_at" => now(),
+                    "updated_at" => now(),
                 ];
             }
             $firstline = FALSE;

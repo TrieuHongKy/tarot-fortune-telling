@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder{
             ThemeSeeder::class,
             CardSeeder::class,
             SpreadSeeder::class,
+            DeckCardSeeder::class,
         ]);
     }
 }

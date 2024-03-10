@@ -36,6 +36,7 @@ class CardSeeder extends Seeder{
                         "meaning_rev" => $rowData['8'],
                         "suit"        => $rowData['9'],
                         "is_major"    => $rowData['5'],
+                        "slug"    => $rowData['10'],
                         "created_at" => now(),
                         "updated_at" => now(),
                     ];

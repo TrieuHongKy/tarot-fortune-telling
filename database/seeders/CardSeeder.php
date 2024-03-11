@@ -27,7 +27,7 @@ class CardSeeder extends Seeder{
         $firstline = TRUE;
         while (($rowData = fgetcsv($csvFile, 2000, ",")) !== FALSE){
             if (!$firstline){
-                if (isset($rowData[3], $rowData[4], $rowData[5], $rowData[6], $rowData[7], $rowData[8], $rowData[9])){
+                if (isset($rowData[3], $rowData[4], $rowData[5], $rowData[6], $rowData[7], $rowData[8], $rowData[9], $rowData[10], $rowData[11])){
                     $data [] = [
                         "name"        => $rowData['3'],
                         "image"       => $rowData['4'],
@@ -37,6 +37,7 @@ class CardSeeder extends Seeder{
                         "suit"        => $rowData['9'],
                         "is_major"    => $rowData['5'],
                         "slug"    => $rowData['10'],
+                        "keyword"    => $rowData['11'],
                         "created_at" => now(),
                         "updated_at" => now(),
                     ];
